@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoodleJumpGUI", "DoodleJump\DoodleJumpGUI.csproj", "{F74060AA-FD3A-4C20-A048-F1B05AAB52FE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3E90EA09-E989-44FE-AE40-53F65B82C378} = {3E90EA09-E989-44FE-AE40-53F65B82C378}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoodleJumpEngine", "DoodleJumpEngine\DoodleJumpEngine.csproj", "{3E90EA09-E989-44FE-AE40-53F65B82C378}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F74060AA-FD3A-4C20-A048-F1B05AAB52FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F74060AA-FD3A-4C20-A048-F1B05AAB52FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F74060AA-FD3A-4C20-A048-F1B05AAB52FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F74060AA-FD3A-4C20-A048-F1B05AAB52FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E90EA09-E989-44FE-AE40-53F65B82C378}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E90EA09-E989-44FE-AE40-53F65B82C378}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E90EA09-E989-44FE-AE40-53F65B82C378}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E90EA09-E989-44FE-AE40-53F65B82C378}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD5DCEAD-8D48-4C7A-81CA-5D40591EEB2B}
+	EndGlobalSection
+EndGlobal
