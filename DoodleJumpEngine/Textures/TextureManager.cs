@@ -14,6 +14,9 @@ namespace DoodleJumpEngine.Textures
         public static void LoadTextures()
         {
             textures.Add(new Texture("Background", Resources.Background));
+            textures.Add(new Texture("Doodle", Resources.Doodle));
+            textures.Add(new Texture("Ground", Resources.Ground));
+            textures.Add(new Texture("Platform", Resources.Platform));
         }
 
         public static void Resize(double ScaleMult)
@@ -21,6 +24,7 @@ namespace DoodleJumpEngine.Textures
             foreach (Texture texture in textures)
             {
                 texture.ScaledImage = SimpleGraphics.ResizeImage(texture.StandartImage, Convert.ToInt32(texture.StandartImage.Width * ScaleMult), Convert.ToInt32((texture.StandartImage.Height * ScaleMult)));
+                texture.ScaledHitBoxeImage = SimpleGraphics.ResizeImage(texture.hitBoxeImage, Convert.ToInt32(texture.hitBoxeImage.Width * ScaleMult), Convert.ToInt32((texture.hitBoxeImage.Height * ScaleMult)));
             }
         }
 

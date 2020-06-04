@@ -11,10 +11,7 @@ namespace DoodleJump
     {
         public static AppSettings appSettings;
         public static Form MainForm = new Form_Main();
-        
 
-
-        
         [STAThread]
         static void Main()
         {
@@ -30,6 +27,16 @@ namespace DoodleJump
             appSettings = new AppSettings();
             appSettings.Load();
             appSettings.Save();
+
+        }
+
+        public static void Restart()
+        {
+            Form_Main.GameEngine.Dispose();
+            MainForm.Dispose();
+            Init();
+            MainForm = new Form_Main();
+            MainForm.Show();
         }
     }
 }

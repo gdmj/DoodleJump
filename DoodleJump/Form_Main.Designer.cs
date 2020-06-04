@@ -62,6 +62,8 @@
             this.Text = "GameGUI";
             this.Load += new System.EventHandler(this.Main_Load);
             this.SizeChanged += new System.EventHandler(this.Main_SizeChanged);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form_Main_KeyDown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form_Main_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Main)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

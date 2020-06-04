@@ -15,7 +15,7 @@ namespace DoodleJump
 {
     public partial class Form_Main : Form
     {
-        Engine GameEngine;
+        public static Engine GameEngine;
         public Form_Main()
         {
             InitializeComponent();
@@ -60,6 +60,40 @@ namespace DoodleJump
             catch (ObjectDisposedException)
             {
 
+            }
+            catch (InvalidOperationException)
+            {
+
+            }
+        }
+
+
+        private void Form_Main_KeyDown(object sender, KeyEventArgs e)
+        {
+            switch (e.KeyData)
+            {
+                case Keys.F5:
+                    Program.Restart();
+                    break;
+                case Keys.Right:
+                    GameEngine.controls.StartRight();
+                    break;
+                case Keys.Left:
+                    GameEngine.controls.StartLeft();
+                    break;
+            }
+        }
+
+        private void Form_Main_KeyUp(object sender, KeyEventArgs e)
+        {
+            switch (e.KeyData)
+            {
+                case Keys.Right:
+                    GameEngine.controls.StopRight();
+                    break;
+                case Keys.Left:
+                    GameEngine.controls.StopLeft();
+                    break;
             }
         }
     }

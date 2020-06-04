@@ -42,7 +42,8 @@ namespace DoodleJumpEngine
             return $"===DEBUG===\n" +
                     $"W/H settings: {engine.appSettings.WindowWidth}/{engine.appSettings.WindowHeight}\n" +
                     $"W/H Bitmap:   {engine.bitmap.Width}/{engine.bitmap.Height}\n" +
-                    $"Fps: {Math.Round(Fps, 0)}; Tps: {Math.Round(Tps, 0)};\n";
+                    $"Fps: {Math.Round(Fps, 0)}; Tps: {Math.Round(Tps, 0)};\n" +
+                    $"XY: {engine.doodle.Point.X}/{engine.doodle.Point.Y}; SpXY: {Math.Round(engine.doodle.Speed.SpeedX, 2)}/{Math.Round(engine.doodle.Speed.SpeedY, 2)}\n";
         }
     }
 }
